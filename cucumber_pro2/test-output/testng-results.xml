@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-02T20:18:33 IST" name="Cucumber Suite" finished-at="2025-04-02T20:18:51 IST" duration-ms="17747">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runn@2aceadd4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-04-02T20:18:33 IST" name="Cucumber Tests" finished-at="2025-04-02T20:18:51 IST" duration-ms="17747">
+      <class name="runner.runn">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.runn@2aceadd4]" started-at="2025-04-02T20:18:33 IST" name="setUpClass" finished-at="2025-04-02T20:18:33 IST" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@ebd06a9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runn@2aceadd4]" started-at="2025-04-02T20:18:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T20:18:39 IST" duration-ms="5265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test Login feature using valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature for SauceDemo"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runn@2aceadd4]" started-at="2025-04-02T20:18:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T20:18:43 IST" duration-ms="4053" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test Login feature using invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature for SauceDemo"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[Error message is incorrect expected:<[]Password is required> but was:<[Epic sadface: ]Password is required>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: Error message is incorrect expected:<[]Password is required> but was:<[Epic sadface: ]Password is required>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at cucumber_pro2.loginpage.user_will_see_an_error_message(loginpage.java:54)
+at ✽.user will see an "Password is required"(file:///C:/Users/GOWRISANKAR/git/repository6/cucumber_pro2/src/test/resources/com/feature/loginpage.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runn@2aceadd4]" started-at="2025-04-02T20:18:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T20:18:47 IST" duration-ms="4077" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test Login feature using invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature for SauceDemo"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[Error message is incorrect expected:<[]Username is required> but was:<[Epic sadface: ]Username is required>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: Error message is incorrect expected:<[]Username is required> but was:<[Epic sadface: ]Username is required>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at cucumber_pro2.loginpage.user_will_see_an_error_message(loginpage.java:54)
+at ✽.user will see an "Username is required"(file:///C:/Users/GOWRISANKAR/git/repository6/cucumber_pro2/src/test/resources/com/feature/loginpage.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runn@2aceadd4]" started-at="2025-04-02T20:18:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T20:18:50 IST" duration-ms="3655" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test Login feature using invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature for SauceDemo"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[Error message is incorrect expected:<[]Username and passwor...> but was:<[Epic sadface: ]Username and passwor...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: Error message is incorrect expected:<[]Username and passwor...> but was:<[Epic sadface: ]Username and passwor...>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at cucumber_pro2.loginpage.user_will_see_an_error_message(loginpage.java:54)
+at ✽.user will see an "Username and password do not match any user in this service"(file:///C:/Users/GOWRISANKAR/git/repository6/cucumber_pro2/src/test/resources/com/feature/loginpage.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.runn@2aceadd4]" started-at="2025-04-02T20:18:50 IST" name="tearDownClass" finished-at="2025-04-02T20:18:51 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.runn -->
+    </test> <!-- Cucumber Tests -->
+  </suite> <!-- Cucumber Suite -->
+</testng-results>
