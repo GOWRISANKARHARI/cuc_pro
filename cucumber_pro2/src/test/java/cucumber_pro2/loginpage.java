@@ -17,37 +17,34 @@ public class loginpage {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
-
-    @After
+ @After
     public void tearDown() {
-        if (driver != null) {
+     
             driver.quit();
-        }
+        
     }
-
-    @Given("I am in the SauceDemo login page")
+  @Given("I am in the SauceDemo login page")
     public void i_am_in_the_saucedemo_login_page() {
         driver.get("https://www.saucedemo.com/");
     }
-
-    @When("user provides username as {string} and password as {string}")
+@When("user provides username as {string} and password as {string}")
     public void user_provides_username_and_password(String username, String password) {
         driver.findElement(By.id("user-name")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
     }
-
-    @When("user clicks the login button")
+  @When("user clicks the login button")
     public void user_clicks_the_login_button() {
         driver.findElement(By.id("login-button")).click();
     }
+  @Then("user will see the DashboardText in the page")
+  public void user_will_see_the_dashboard_text_in_the_page() {
+      WebElement dashboardtext = driver.findElement(By.className("app_logo"));
+      String actual = dashboardtext.getText();
+      
+      Assert.assertEquals("Dashboard text is not visible", "Swag Labs", actual);
+  }
 
-    @Then("user will see the DashboardText in the page")
-    public void user_will_see_the_dashboard_text_in_the_page() {
-        WebElement dashboardText = driver.findElement(By.className("title"));
-        Assert.assertTrue("Dashboard text is not visible", dashboardText.isDisplayed());
-    }
-
-    @Then("user will see an {string}")
+ @Then("user will see an {string}")
     public void user_will_see_an_error_message(String expected) {
         WebElement errorMessage = driver.findElement(By.cssSelector("h3[data-test='error']"));
         Assert.assertTrue("Error message is not displayed", errorMessage.isDisplayed());
